@@ -45,6 +45,30 @@
         th {
             background-color: #f2f2f2;
         }
+        .tap {
+            margin-bottom: 30px;
+            font-weight: normal;
+            padding: 15px;
+            background-color: #c9f2b2;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex; /* Alinha os itens lado a lado */
+            justify-content: space-around; /* Distribui os elementos de forma equilibrada */
+            gap: 20px; /* Espaço entre os itens */
+            flex-wrap: wrap; /* Permite que os itens quebrem linha se a tela for pequena */
+        }
+        .Trem {
+            margin-bottom: 30px;
+            font-weight: normal;
+            padding: 15px;
+            background-color: #c9f2b2;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex; /* Alinha os itens lado a lado */
+            justify-content: space-around; /* Distribui os elementos de forma equilibrada */
+            gap: 20px; /* Espaço entre os itens */
+            flex-wrap: wrap; /* Permite que os itens quebrem linha se a tela for pequena */
+        }
         .content {
             display: none;
             padding: 20px;
@@ -88,7 +112,7 @@
         .hoteis {
             margin-bottom: 30px;
             padding: 15px;
-            background-color: hsl(97, 50%, 91%);
+            background-color: hwb(186 59% 3%);
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             display: flex;
@@ -99,6 +123,20 @@
         .active {
             display: block;
         }
+        .back-to-top {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+.back-to-top:hover {
+    background-color: #0056b3;
+}
     </style>
 </head>
 <body>
@@ -177,6 +215,7 @@
             <td><a href="https://welcomepickups.com/">Welcome Pickups</a></td>
         </tr>
     </table>
+    <button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
     </div>
     
     <div id="dia1" class="content">
@@ -465,6 +504,7 @@
                 <li><a href="https://maps.app.goo.gl/sPkoeR39fzmJGLp1A" target="_blank">Link do Google Maps</a>.</li>
             </ul>
         </div>
+        <button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
     </div>
 
     <div id="dia2" class="content">
@@ -720,6 +760,7 @@
                 <li><strong>Hidratação e conforto:</strong> Leve água e use calçados confortáveis, pois há muita caminhada envolvida.</li>
             </ul>
         </div>
+        <button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
     </div>
 
     <div id="dia3" class="content">
@@ -875,7 +916,8 @@
     <p>Caminhe até a Estação Termini (cerca de 8 minutos, 700 metros).</p>
     <a href="https://maps.app.goo.gl/aQDpXn23p17zgZ3K7" target="_blank">Link do Google Maps</a>
 </div>
-    </div>
+<button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
+</div>
 
     <div id="dia4" class="content">
         <h2>Dia 4 (21/02 - Sexta-Feira): Deslocamento Roma para Florença</h2>
@@ -1128,7 +1170,8 @@
         <li><strong>Hidratação e conforto:</strong> Leve água e use calçados confortáveis, pois há muita caminhada envolvida.</li>
     </ul>
 </div>
-    </div>
+<button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
+</div>
 
     <div id="dia5" class="content">
         <h2>Dia 5 (22/02 - Sábado): Deslocamento de Florença para Pisa</h2>
@@ -1496,6 +1539,7 @@
                 <li><strong>Hidratação e conforto:</strong> Leve água e use calçados confortáveis, pois há muita caminhada envolvida.</li>
             </ul>
         </div>
+        <button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
     </div>
 
     <div id="dia6" class="content">
@@ -1815,7 +1859,8 @@
     <p><strong>Deslocamento desde a Ponte de Pedra:</strong> Caminhe até as ruínas (cerca de 2 minutos, 170 metros).</p>
     <a href="https://maps.app.goo.gl/YLvv4rkmUCrV6RTz7" target="_blank">Link do Google Maps</a>
 </div>
-    </div>
+<button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
+</div>
             
     
     <div id="dia7" class="content">
@@ -2118,7 +2163,8 @@
     <li><strong>Hidratação e conforto:</strong> Leve água e use calçados confortáveis, pois há muita caminhada envolvida.</li>
 </ul>
 </div>
-    </div>
+<button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
+</div>
 
     <div id="dia8" class="content">
         <h1>Dia 8 (25/04 - Terça Feira): Milão</h1>
@@ -2530,26 +2576,31 @@
             </ul>
         </div>
         </div>
+        <button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
     </div>
         
     <div id="dia9" class="content">
         <h2>Dia 9 - Viagem Milão to Interlaken</h2>
-        <p>Visita ao Coliseu e Fórum Romano...</p>
+        <p>Viagem de Trem para Interlaken🇨🇭</p>
+        <button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
     </div>
 
     <div id="dia10" class="content">
         <h2>Dia 10 - Passeio no topo da europa</h2>
         <p>Visita ao Coliseu e Fórum Romano...</p>
+        <button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
     </div>
 
     <div id="dia11" class="content">
         <h2>Dia 11 - Transfer to Roma</h2>
-        <p>Visita ao Coliseu e Fórum Romano...</p>
+        <p>viajar de Interlaken🇨🇭 para Roma</p>
+        <button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
     </div>
 
     <div id="dia12" class="content">
         <h2>Dia 12 - Transfer to Lisboa</h2>
-        <p>Visita ao Coliseu e Fórum Romano...</p>
+        <p>Deslocamento entre Roma e Lisboa🇵🇹</p>
+        <button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
     </div>
 
     <div id="documentos" class="content">
@@ -2601,14 +2652,7 @@
                     <li><a href="https://github.com/NettoVieiraBB/Italia2025/blob/main/AIRBNB%20ROMA%20AEROPORTO.pdf" download>Baixar Arquivo</a></li>
             </ul>
         </div>
-        <div class="tap">
-            <h3>Passagens</h3>
-            <p><a href="#">Download das passagens</a></p>
-        </div>
-        <div class="hoteis">
-            <h3>Hotéis</h3>
-            <p><a href="#">Informações sobre hospedagem</a></p>
-        </div>
+        <button onclick="scrollToTop()" class="back-to-top">⬆ Voltar ao Topo</button>
     </div>
 
     <script>
@@ -2619,6 +2663,9 @@
             }
             document.getElementById(day).classList.add('active');
         }
+        function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
     </script>
 
 </body>
